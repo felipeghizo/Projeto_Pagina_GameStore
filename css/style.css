@@ -1,0 +1,166 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+div.center{max-width: 960px;padding: 0 2%;margin: 0 auto;}
+
+div.clear{clear: both;}
+
+/* Body */
+body{
+    background-color: rgb(226, 226, 226);
+    font-family: 'Montserrat', sans-serif;
+}
+/* Body Header */
+body header{margin-top: 1%;}
+/* Body Header Logo */
+body header div.logo{float: left;}
+body header div.logo img{max-width: 100%;}
+/* Body Header Menu */
+body header div.menu{
+    float: right;
+    margin-top: 15px;
+}
+body header div.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+}
+body header div.menu a:nth-last-of-type(1){
+    background-color: #30851d;
+    color: white;
+    font-size: 19px;
+    padding: 8px 25px;
+}
+
+/* Body Section-Topo */
+body section.topo{
+    background-color: white;
+    padding: 30px 0;
+    margin-top: 10px;
+}
+body section.topo div.center div.texto-topo{margin-bottom: 30px;}
+body section.topo div.center div.texto-topo,
+body section.topo div.center div.img-topo{
+    float: left;
+    width: 50%;
+    color: #11223f;
+}
+body section.topo div.center div.texto-topo h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+body section.topo div.center div.texto-topo p{font-size: 20px;}
+body section.topo div.center div.img-topo img{max-width: 100%;}
+
+/* Body Section-Depoimentos */
+body section.depoimentos{padding: 30px 0;}
+body section.depoimentos > div.center{
+    display: flex;
+    flex-wrap: wrap;
+}
+body section.depoimentos div.depoimento-single{
+    background-color: white;
+    background-image: url("../images/quote.png");
+    background-size: 66px 53px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding: 30px;
+    width: 45%;
+    margin-right: 5%;
+}
+body section.depoimentos div.depoimento-single p{
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+    width: 90%;
+}
+body section.depoimentos div.depoimento-single span{
+    font-weight: bold;
+    color: green;
+    font-size: 11px;
+}
+
+/* Body Section-Sobre */
+body section.sobre{padding: 30px 0;}
+body section.sobre div.center div.titulo-sobre h2{
+    color: black;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2bb222;
+    display: inline-block;
+    padding-right: 100px;
+}
+body section.sobre div.center div.sobre-single{
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+body section.sobre div.center div.sobre-single div.titulo-single{display: flex;}
+body section.sobre div.center div.sobre-single div.titulo-single i{
+    color: white;
+    font-size: 22px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #2bb222;
+    width: 30%;
+}
+body section.sobre div.center div.sobre-single div.titulo-single h3{
+    background-color: #f1f6f1;
+    color: black;
+    width: 70%;
+    padding: 5% 11%;
+}
+body section.sobre div.center div.sobre-single div.sobre-conteudo{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+/* footer */
+footer{
+    background-color: #effeee;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+footer div.center a i{
+    color: #11223f ;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    /* Body Section-Topo */
+    body section.topo div.center div.texto-topo,
+    body section.topo div.center div.img-topo{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Body Section-Depoimentos */
+    body section.depoimentos div.depoimento-single{
+        width: 80%;
+        margin: 10px 10%;
+    }
+}
+@media screen and (max-width: 720px){
+    /* Body Header Menu */
+    body header div.menu a:nth-last-of-type(1){
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Body Section-Sobre */
+    body section.sobre div.center div.sobre-single{
+        width: 100%;
+        margin: 0 auto;
+    }
+    body section.sobre div.center div.sobre-single div.titulo-single i{
+        font-size: 28px;
+        padding-top: 13px;
+    }
+    body section.sobre div.center div.sobre-single div.titulo-single h3{
+        padding: 3% 20%;
+    }
+}
